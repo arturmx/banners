@@ -1,0 +1,114 @@
+@keyframes bg-change {
+    0% {
+    opacity:1;
+  }
+    45% {
+  opacity:1;
+  }
+    55% {
+  opacity:0;
+  }
+    100% {
+  opacity:0;
+  }
+  }
+  @keyframes appear {
+    0% {
+        opacity:0.7;
+    }
+    100% {
+        opacity:1;
+    }
+  }
+
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+}
+.banner {
+    width:80%;
+    margin:auto;
+    padding-top:200px;
+}
+.wrapper {
+    width:1200px;
+    height:628px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    position:relative;
+}
+.bg1 {
+    position:absolute;
+    z-index:2;
+    animation-name: bg-change;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+.bg2 {
+    position:absolute;
+    z-index:1;
+}
+.top {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    z-index: 99;
+}
+.logo {
+    padding:28px 35px;
+    background-color:#FFF;
+    border-radius: 0px 0px 15px 0px;
+    align-self:flex-start;
+}
+.topright {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+.e-mail {
+    font-size: 32px;
+    line-height: 38px;
+    color:#FFF;
+    padding:14px;
+}
+.toptext {
+    padding: 14px 22px 14px 76px;
+    color:#E65250;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: right;
+    background: #FFFFFF;
+    opacity: 0.8;
+    border-radius: 15px 0px 0px 15px;
+    width:410px;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.bottom {
+    background-color:#E65250;
+    height:278px;
+    width:860px;
+    margin-bottom:0;
+    border-radius: 0px 15px 15px 0px;
+    z-index:99;
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.bottomtext {
+    font-size: 46px;
+    line-height: 55px;
+    color:#FFF;
+    padding:30px 47px;
+}

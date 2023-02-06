@@ -1,0 +1,34 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.container {
+    width:90%;
+    margin:auto;
+    padding-top:100px;
+}
+.banner {
+    background-image: url("./Rectangle4.png");
+    width:300px;
+    height:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.e-mail {
+    color:#E65250;
+    text-decoration: underline;
+}
+.bottom {
+    color:#FFF;
+    background-color:#E65250;
+    padding:20px 25px;
+    border-radius: 15px 15px 0px 0px;
+}

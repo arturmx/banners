@@ -1,0 +1,102 @@
+* {
+    margin:0;
+    padding:0;
+}
+@keyframes slide1 {
+    0% {
+        transform: translatex(-100%);
+        opacity:0;
+    }
+    100% {
+        transform: translatex(0%);
+    }
+}
+@keyframes slide2 {
+    0% {
+        transform: translatex(100%);
+    }
+    20% {
+        transform: translatex(0%);
+    }
+    80% {
+        transform: translatex(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+@keyframes appear {
+    0% {
+        opacity:0;
+    }
+    10% {
+        opacity:1
+    }
+    90% {
+        opacity:1
+    }
+    100% {
+        opacity:0;
+    }
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+}
+.container {
+    margin:auto;
+}
+.banner {
+    background-image: url("./Rectangle12.png");
+    width:1920px;
+    height:1080px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.leftright {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    overflow:hidden;
+}
+.logo {
+    animation-name: slide1;
+    animation-duration: 1s;
+}
+.topright {
+    padding:14px 70px 14px 300px;
+    color:#E65250;
+    background-color:rgba( 255, 255, 255, 0.8 );
+    border-radius: 15px 0px 0px 15px;
+    align-self:flex-end;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: right;
+    margin-bottom:30px;
+    animation: slide2 10s 1s both infinite;
+}
+.topright p {
+    opacity:1
+}
+.bottomleft {
+    padding:38px 200px 38px 81px;
+    background-color:#E65250;
+    font-size: 56px;
+    line-height: 67px;
+    color:#FFF;
+    border-radius: 0px 15px 15px 0px;
+    opacity:0;
+    animation-name: appear;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+}
+.e-mail {
+    font-size: 48px;
+    line-height: 58px;
+    color:#FFF;
+    padding:0 35px 50px 0;
+}

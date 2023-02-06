@@ -1,0 +1,39 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+    color:#FFF;
+    font-weight: 400;
+}
+.container {
+    width:90%;
+    margin:auto;
+    padding-top:50px;
+}
+.banner {
+    background-color:#E65250;
+    width:468px;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    position:relative;
+}
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: right;
+    margin-right:12px;
+}
+.e-mail {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    position:absolute;
+    bottom:0;
+    margin:0px 0px 3px 9px;
+}

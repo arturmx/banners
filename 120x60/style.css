@@ -1,0 +1,37 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+	font-weight: 400;
+    color:#FFF;
+}
+.container {
+    width:90%;
+    margin:auto;
+    padding-top:100px;
+}
+.banner {
+    background-image: url("./Rectangle7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:125px;
+    height:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.e-mail {
+    font-size: 7px;
+    line-height: 8px;
+}
+.bottom {
+    font-size: 6px;
+    line-height: 7px;
+    text-align: center;
+    background-color:#E65250;
+    border-radius: 5px 5px 0px 0px;
+    padding:3px 2px 2px;
+}

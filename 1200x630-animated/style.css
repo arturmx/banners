@@ -1,0 +1,140 @@
+@keyframes slideup {
+    0% {
+        transform:translatey(100%);
+        opacity:0
+    }
+    100% {
+        transform:translatey(0%);
+        opacity:1
+    }
+}
+@keyframes slideleft {
+    0% {
+        transform:translateX(100%);
+        opacity:0;
+    }
+    20% {
+        transform:translateX(0%);
+        opacity:1;
+    }
+    80% {
+        transform:translateX(0%);
+        opacity:1;
+    }
+    100% {
+        transform:translateX(100%);
+        opacity:0;
+    }
+}
+@keyframes slidedown {
+    0% {
+        transform:translatey(-100%);
+        opacity:0
+    }
+    100% {
+        transform:translatey(0%);
+        opacity:1
+    }
+}
+@keyframes appear {
+    0% {
+        opacity:0
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+}
+@keyframes appear2 {
+    0% {
+        opacity:0
+    }
+    50% {
+        opacity:1
+    }
+    100% {
+        opacity:0
+    }
+}
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:darkgray;
+    font-family: 'Futura Md BT', sans-serif;
+    font-weight: 400;
+}
+.container {
+    width:80%;
+    margin:auto;
+    padding-top:200px;
+}
+.banner {
+    background-image: url("./Rectangle9.png");
+    width:1200px;
+    height:630px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    overflow:hidden;
+}
+.top {
+    display:flex;
+    justify-content:space-between;
+}
+.topleft {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    animation-name: slidedown;
+    animation-duration: 2s;
+}
+.e-mail {
+    font-size: 36px;
+    line-height: 43px;
+    color:#FFF;
+    margin:23px 0 0 33px;
+}
+.topright {
+    border-radius: 0px 0px 0px 15px;
+    background-color: #FFF;
+    align-self:flex-start;
+    height:143px;
+    width:504px;
+    opacity:0;
+    animation: slideleft 10s 1s ease-out forwards infinite;
+}
+.toptext {
+    font-size: 50px;
+    line-height: 60px;
+    color:#E65250;
+    padding:14px 22px 29px 77px;
+    text-align: right;
+}
+.bottom {
+    height:150px;
+    background-color:#E65250;
+    border-radius: 15px 15px 0px 0px;
+    opacity:0;
+    animation-name: slideup;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.bottomtext,
+.bottomtext2 {
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color:#FFF;
+    padding:28px 38px;
+    position:absolute;
+    animation: appear 6s 2s alternate forwards infinite;
+}
+.bottomtext2 {
+    animation: appear1 6s 6s alternate forwards infinite;
+}
