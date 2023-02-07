@@ -58,10 +58,10 @@ body {
     padding:25px 40px 25px 40px;
 }
 .middlebottom {
+    height:960px;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    gap:373px;
 }   
 .slide1 {
     background-image: url("./Rectangle11.png");
