@@ -49,13 +49,13 @@
 }
 @keyframes appear2 {
     0% {
-        opacity:0
-    }
-    50% {
         opacity:1
     }
-    100% {
+    50% {
         opacity:0
+    }
+    100% {
+        opacity:1
     }
 }
 * {
@@ -133,8 +133,12 @@ body {
     color:#FFF;
     padding:28px 38px;
     position:absolute;
-    animation: appear 6s 2s alternate forwards infinite;
+}
+.bottomtext {
+    opacity:0;
+    animation: appear 10s forwards cubic-bezier(0.8,0,0.2,0.8) infinite;
 }
 .bottomtext2 {
-    animation: appear1 6s 6s alternate forwards infinite;
+    opacity:1;
+    animation: appear2 10s forwards cubic-bezier(0.8,0,0.2,0.8) infinite;
 }
