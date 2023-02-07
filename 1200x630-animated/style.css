@@ -38,10 +38,13 @@
 }
 @keyframes appear {
     0% {
-        opacity:0
-    }
-    50% {
         opacity:1
+    }
+    45% {
+        opacity:1
+    }
+    55% {
+        opacity:0
     }
     100% {
         opacity:0
@@ -49,10 +52,13 @@
 }
 @keyframes appear2 {
     0% {
-        opacity:1
-    }
-    50% {
         opacity:0
+    }
+    45% {
+        opacity:0
+    }
+    55% {
+        opacity:1
     }
     100% {
         opacity:1
@@ -135,10 +141,8 @@ body {
     position:absolute;
 }
 .bottomtext {
-    opacity:0;
-    animation: appear 10s forwards cubic-bezier(0.8,0,0.2,0.8) infinite;
+    animation: appear 10s ease-in-out alternate infinite;
 }
 .bottomtext2 {
-    opacity:1;
-    animation: appear2 10s forwards cubic-bezier(0.8,0,0.2,0.8) infinite;
+    animation: appear2 10s ease-in-out alternate infinite;
 }

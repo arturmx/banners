@@ -14,13 +14,26 @@
   }
   @keyframes appear {
     0% {
-        opacity:0.7;
+        background-color:rgba( 255, 255, 255, 0.5 );
+    }
+    45% {
+        background-color:rgba( 255, 255, 255, 0.5 );
+    }
+    55% {
+        background-color:#FFF;
     }
     100% {
-        opacity:1;
+        background-color:#FFF;
     }
   }
-
+  @keyframes slide {
+    0% {
+        transform:translateX(-100%);
+    }
+    100% {
+        transform:translateX(0%);
+    }
+  }
 * {
     margin:0;
     padding:0;
@@ -61,12 +74,15 @@ body {
     justify-content:space-between;
     align-items:flex-start;
     z-index: 99;
+    overflow:hidden;
 }
 .logo {
     padding:28px 35px;
     background-color:#FFF;
     border-radius: 0px 0px 15px 0px;
     align-self:flex-start;
+    animation-name: slide;
+    animation-duration: 2s;
 }
 .topright {
     display:flex;
@@ -85,13 +101,13 @@ body {
     font-size: 50px;
     line-height: 60px;
     text-align: right;
-    background: #FFFFFF;
-    opacity: 0.8;
+    background-color:rgba( 255, 255, 255, 0.5 );
     border-radius: 15px 0px 0px 15px;
     width:410px;
     animation-name: appear;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
     animation-direction: alternate-reverse;
 }
 .bottom {
@@ -101,14 +117,13 @@ body {
     margin-bottom:0;
     border-radius: 0px 15px 15px 0px;
     z-index:99;
-    animation-name: appear;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    overflow:hidden;
 }
 .bottomtext {
     font-size: 46px;
     line-height: 55px;
     color:#FFF;
     padding:30px 47px;
+    animation-name: slide;
+    animation-duration: 4s;
 }
