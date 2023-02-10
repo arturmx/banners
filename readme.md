@@ -2,7 +2,7 @@
 
 includes:
 
--6 static banners
+-6 static banners coded based on Figma project
 
 -3 Css keyframes animated banners
 
