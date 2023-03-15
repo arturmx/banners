@@ -7,3 +7,5 @@ includes:
 -3 Css keyframes animated banners
 
 -1 banner with js slider
+
+You can always download zip file which contains all project files
